@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html>
+    
+        <head>
+            <link href="basic.css" rel="stylesheet" type="text/css">
+        </head>
+    
+        <body>
+    
+        <!--Title for section-->
+        <h1>The Page of Planets</h1>
+
+        <!--Buttons for to control the content above does not change the title for section-->
+        <div class="buttons">
+        <p id="details"></p>
+        <input id="planetButton" value="Show a Planet" type="button">
+        <input id="upFont" value="Bigger Text" type="button">
+        <input id="downFont" value="Bigger Text" type="button">
+        </div>
+
+        <p><br></p>
+
+        <!--Space for article to appear once the button is pressed-->
+        <div class="planetArea">
+            <h2 id="planetTitleSpace">Press the "Show a Planet" button above to begin!</h2>
+            <p id="planetContentSpace">Details about content will appear here...</p>
+            <img id="planetImage" src="" width="30%">
+
+
+            <p><br></p>
+            
+            <h2>Please add the following details to our database of planets: </h2>
+            <input id="hideButton" type="button" value="Add">
+
+            <!--A form section for entering data about a planet-->
+            <div class="hiddenArea" id="hiddenAdd">
+                <form>
+                    Planet Name: <br>
+                    <input type="text" id="planetName"><br>
+                    Planet Description: <br>
+                    <input type="text" id="planetDescription"> <br>
+                    URL link to Planet Image: <br>
+                    <input type="text" id="planetURL"> <br>
+                    <br>
+                    <input id="addPlanet" type="button" value="Add Planet to List">
+                </form>
+            </div>
+        </div>
+
+    
+        </body>
+
+        <script src="loadJSONmyJSON.js"></script>
+        <script src="planetAPI.js"></script>
+        <script src="basic.js"></script>
+        <script src="layout.js"></script>
+    
+        <footer>
+            <h6>Copyright &copy; 2019, Chris Baillie</h6>
+        </footer>
+    
+    
+    </html>

@@ -1,13 +1,3 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function smallMenu() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  
 // Resize text function 
 function resizeText(multiplier, id) {
   if (document.getElementById(id).style.fontSize == "") {
